@@ -1,0 +1,12 @@
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\bin\Debug\DEBUGTOOL.exe.config
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\bin\Debug\DEBUGTOOL.exe
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\bin\Debug\DEBUGTOOL.pdb
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\bin\Debug\SYS.dll
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\bin\Debug\SYS.pdb
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\obj\Debug\DEBUGTOOL.csprojResolveAssemblyReference.cache
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\obj\Debug\DEBUGTOOL.exe
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\obj\Debug\DEBUGTOOL.pdb
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\bin\Debug\Temp.dll
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\bin\Debug\Temp.pdb
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\obj\Debug\DEBUGTOOL.Form1.resources
+I:\EyeSight\Root\Solutions\ESTool\DEBUGTOOL\obj\Debug\DEBUGTOOL.csproj.GenerateResource.Cache

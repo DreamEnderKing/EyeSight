@@ -1,0 +1,8 @@
+I:\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.csprojResolveAssemblyReference.cache
+I:\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.NotificationIcon.resources
+I:\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.csproj.GenerateResource.Cache
+I:\EyeSight\Root\System\ESManager.exe.config
+I:\EyeSight\Root\System\ESManager.exe
+I:\EyeSight\Root\System\ESManager.pdb
+I:\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.exe
+I:\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.pdb

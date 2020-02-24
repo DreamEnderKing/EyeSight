@@ -1,0 +1,5 @@
+I:\EyeSight\Root\Solutions\ESTool\SYS\obj\Debug\SYS.csprojResolveAssemblyReference.cache
+I:\EyeSight\Root\Solutions\ESTool\SYS\obj\Debug\SYS.dll
+I:\EyeSight\Root\Solutions\ESTool\SYS\obj\Debug\SYS.pdb
+I:\EyeSight\Root\SYS.dll
+I:\EyeSight\Root\SYS.pdb

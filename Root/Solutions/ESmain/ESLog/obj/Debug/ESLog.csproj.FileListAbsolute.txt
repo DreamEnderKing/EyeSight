@@ -1,0 +1,16 @@
+I:\EyeSight\Root\Solutions\ESmain\ESLog\bin\Debug\ESLog.dll
+I:\EyeSight\Root\Solutions\ESmain\ESLog\bin\Debug\ESLog.pdb
+I:\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.csprojResolveAssemblyReference.cache
+I:\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.dll
+I:\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.pdb
+I:\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.PicturePicker.resources
+I:\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.csproj.GenerateResource.Cache
+I:\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.Login.resources
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\bin\Debug\ESLog.dll
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\bin\Debug\ESLog.pdb
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.Login.resources
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.PicturePicker.resources
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.dll
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.pdb

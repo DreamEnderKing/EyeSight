@@ -1,0 +1,15 @@
+I:\EyeSight\Root\Solutions\ESmain\ESLoad\obj\Debug\ESLoad.csprojResolveAssemblyReference.cache
+I:\EyeSight\Root\System\ESLoad.exe.config
+I:\EyeSight\Root\System\ESLoad.exe
+I:\EyeSight\Root\System\ESLoad.pdb
+I:\EyeSight\Root\Solutions\ESmain\ESLoad\obj\Debug\ESLoad.pdb
+I:\EyeSight\Root\Solutions\ESmain\ESLoad\bin\Debug\ESLoad.dll.config
+I:\EyeSight\Root\Solutions\ESmain\ESLoad\bin\Debug\ESLoad.dll
+I:\EyeSight\Root\Solutions\ESmain\ESLoad\bin\Debug\ESLoad.pdb
+I:\EyeSight\Root\Solutions\ESmain\ESLoad\obj\Debug\ESLoad.dll
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLoad\bin\Debug\ESLoad.dll.config
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLoad\bin\Debug\ESLoad.dll
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLoad\bin\Debug\ESLoad.pdb
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLoad\obj\Debug\ESLoad.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLoad\obj\Debug\ESLoad.dll
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLoad\obj\Debug\ESLoad.pdb

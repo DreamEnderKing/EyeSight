@@ -1,0 +1,10 @@
+I:\EyeSight\Root\Solutions\ESmain\ESDesktop\bin\Debug\ESDesktop.dll
+I:\EyeSight\Root\Solutions\ESmain\ESDesktop\bin\Debug\ESDesktop.pdb
+I:\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.csprojResolveAssemblyReference.cache
+I:\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.dll
+I:\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.pdb
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\bin\Debug\ESDesktop.dll
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\bin\Debug\ESDesktop.pdb
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.dll
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.pdb

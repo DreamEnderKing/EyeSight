@@ -1,0 +1,12 @@
+I:\EyeSight\Root\Solutions\ESmain\ESMain\obj\Debug\ESMain.csprojResolveAssemblyReference.cache
+I:\EyeSight\Root\System\ESMain.exe.config
+I:\EyeSight\Root\System\ESMain.exe
+I:\EyeSight\Root\System\ESMain.pdb
+I:\EyeSight\Root\Solutions\ESmain\ESMain\obj\Debug\ESMain.exe
+I:\EyeSight\Root\Solutions\ESmain\ESMain\obj\Debug\ESMain.pdb
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\System\ESMain.exe.config
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\System\ESMain.exe
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\System\ESMain.pdb
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESMain\obj\Debug\ESMain.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESMain\obj\Debug\ESMain.exe
+C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESMain\obj\Debug\ESMain.pdb
