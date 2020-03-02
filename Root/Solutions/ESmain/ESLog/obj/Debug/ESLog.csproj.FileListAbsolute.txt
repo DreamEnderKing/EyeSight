@@ -14,3 +14,12 @@ C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\D
 C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.csproj.GenerateResource.Cache
 C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.dll
 C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.pdb
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.csprojResolveAssemblyReference.cache
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.Login.resources
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.PicturePicker.resources
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.csproj.GenerateResource.Cache
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.dll
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\bin\Debug\ESLog.dll
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\bin\Debug\ESLog.pdb
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.Shutdown.resources
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESLog\obj\Debug\ESLog.pdb

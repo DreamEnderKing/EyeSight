@@ -36,12 +36,17 @@ namespace ESDesktop
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.SuspendLayout();
 			// 
 			// Desktop
 			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "Desktop";
+			this.ClientSize = new System.Drawing.Size(284, 262);
 			this.Name = "Desktop";
+			this.Text = "Desktop";
+			this.TransparencyKey = System.Drawing.Color.Fuchsia;
+			this.ResumeLayout(false);
 		}
 	}
 }

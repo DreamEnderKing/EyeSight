@@ -8,3 +8,10 @@ C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\b
 C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.dll
 C:\Users\Administrator\Desktop\张琨\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.pdb
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESDesktop\bin\Debug\ESDesktop.dll
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESDesktop\bin\Debug\ESDesktop.pdb
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.csprojResolveAssemblyReference.cache
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.dll
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.pdb
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.Desktop.resources
+E:\2345下载\EyeSight\Root\Solutions\ESmain\ESDesktop\obj\Debug\ESDesktop.csproj.GenerateResource.Cache

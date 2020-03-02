@@ -36,12 +36,17 @@ namespace ESLog
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.SuspendLayout();
 			// 
 			// Shutdown
 			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "Shutdown";
+			this.ClientSize = new System.Drawing.Size(284, 262);
 			this.Name = "Shutdown";
+			this.Text = "Shutdown";
+			this.TransparencyKey = System.Drawing.Color.Fuchsia;
+			this.ResumeLayout(false);
 		}
 	}
 }

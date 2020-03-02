@@ -110,7 +110,7 @@ namespace ESLoad
 			this.Name = "Load";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Load";
-			this.TopMost = true;
+			this.TransparencyKey = System.Drawing.Color.Fuchsia;
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

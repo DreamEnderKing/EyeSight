@@ -27,6 +27,9 @@ namespace ESLog
 			
 			Img.Width = Width;
 			Img.Height = Height;
+			
+			mask = (Bitmap)imageList1.Images[0];
+			canvas = new Bitmap(Width, Height);
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -34,23 +37,54 @@ namespace ESLog
 		
 		private bool _Selected;
 		
-		public bool Seleced
+		public bool Selected
 		{
 			get {return _Selected; }
-			set {_Selected = true; }
+			set {_Selected = value; paintSelect();}
 		}
 		
 		public Image Image
 		{
 			get {return Img.BackgroundImage;}
-			set {Img.BackgroundImage = value;}
+			set {Img.BackgroundImage = value; paintSelect();}
 		}
+		
+		private Bitmap mask;
+		
+		private Bitmap canvas;
 		
 		private void paintSelect()
 		{
 			if (_Selected) {
-				
+				using (Graphics g = Graphics.FromImage(canvas)) {
+					g.Clear(Color.Transparent);
+					TextureBrush brush = new TextureBrush(mask);
+					brush.TranslateTransform(Width - mask.Width, Height - mask.Height);
+					Rectangle rect = new Rectangle(Width - mask.Width, Height - mask.Height, mask.Width, mask.Height);
+					g.FillRectangle(brush, rect);
+					g.Flush();
+				}
+				Img.Image = canvas;
 			}
+			else
+			{
+				using (Graphics g = Graphics.FromImage(canvas)) {
+					g.Clear(Color.Transparent);
+				}
+			}
+		}
+		
+		void PicturePickerLoad(object sender, EventArgs e)
+		{
+			paintSelect();
+		}
+		
+		
+		void PicturePickerSizeChanged(object sender, EventArgs e)
+		{
+			Img.Size = Size;
+			canvas = new Bitmap(canvas, Size);
+			paintSelect();
 		}
 	}
 }

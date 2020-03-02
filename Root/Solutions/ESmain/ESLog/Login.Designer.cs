@@ -42,22 +42,23 @@ namespace ESLog
 			// 
 			// picturePicker1
 			// 
+			this.picturePicker1.BackColor = System.Drawing.SystemColors.Control;
 			this.picturePicker1.Image = ((System.Drawing.Image)(resources.GetObject("picturePicker1.Image")));
-			this.picturePicker1.Location = new System.Drawing.Point(25, 31);
+			this.picturePicker1.Location = new System.Drawing.Point(16, 63);
 			this.picturePicker1.Name = "picturePicker1";
 			this.picturePicker1.Selected = false;
-			this.picturePicker1.Size = new System.Drawing.Size(143, 188);
+			this.picturePicker1.Size = new System.Drawing.Size(359, 242);
 			this.picturePicker1.TabIndex = 0;
-			this.picturePicker1.Click += new System.EventHandler(this.PicturePicker1Click);
 			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(284, 262);
+			this.ClientSize = new System.Drawing.Size(402, 354);
 			this.Controls.Add(this.picturePicker1);
 			this.Name = "Login";
 			this.Text = "Login";
+			this.TransparencyKey = System.Drawing.Color.Fuchsia;
 			this.ResumeLayout(false);
 		}
 		private ESLog.PicturePicker picturePicker1;
