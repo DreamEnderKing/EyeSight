@@ -64,6 +64,9 @@
     <Compile Include="Load.Designer.cs">
       <DependentUpon>Load.cs</DependentUpon>
     </Compile>
+    <Compile Include="Load.InitPaint.cs">
+      <DependentUpon>Load.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
