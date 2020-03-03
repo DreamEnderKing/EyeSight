@@ -46,7 +46,7 @@ namespace ESLog
 			this.picturePicker1.Image = ((System.Drawing.Image)(resources.GetObject("picturePicker1.Image")));
 			this.picturePicker1.Location = new System.Drawing.Point(16, 63);
 			this.picturePicker1.Name = "picturePicker1";
-			this.picturePicker1.Selected = false;
+			this.picturePicker1.Selected = true;
 			this.picturePicker1.Size = new System.Drawing.Size(359, 242);
 			this.picturePicker1.TabIndex = 0;
 			// 

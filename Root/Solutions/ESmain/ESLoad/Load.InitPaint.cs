@@ -40,7 +40,13 @@ namespace ESLoad
 			int PixY = Height / 8;
 			
 			pictureBox1.Size = new Size(PixX * 6, PixY * 3);
-			pictureBox1.Location = new Point(PixX * 2, PixY * 2);
+			pictureBox1.Location = new Point(PixX * 2, PixY * 1);
+			
+			label1.Size = new Size(PixX * 3, PixY * 1);
+			label1.Location = new Point(PixX * 1, PixY * 7);
+			
+			pictureBox2.Size = new Size(PixX * 1 / 2, PixY * 1 / 2);
+			pictureBox2.Location = new Point(PixX * 1, PixY * 6);
 		}
 		#endregion
 		
