@@ -7,6 +7,7 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
+using Shell;
 
 namespace DEBUGTOOL
 {
@@ -17,9 +18,9 @@ namespace DEBUGTOOL
 			Console.WriteLine("Hello World!");
 			
 			// TODO: Implement Functionality Here
-			Console.WriteLine(SYS.SYS.path);
+			Console.WriteLine(Shell.SYS.path);
 			
-			new Temp.Temp().ClearTemp();
+			new Temp().ClearTemp();
 			/*
 			string s = new Temp.Temp().LoadFile("D:\\p.ini");
 			System.IO.FileStream fs = new System.IO.FileStream(s, System.IO.FileMode.Open);

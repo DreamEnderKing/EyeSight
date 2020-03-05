@@ -58,13 +58,9 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SYS\SYS.csproj">
-      <Project>{99B9BC11-0F3C-45BA-BE1A-90DFB7590EEC}</Project>
-      <Name>SYS</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Temp\Temp.csproj">
-      <Project>{F83B5C0A-CDFB-4532-B8DD-827CCBF5612B}</Project>
-      <Name>Temp</Name>
+    <ProjectReference Include="..\Shell\Shell.csproj">
+      <Project>{8E973EB8-A1B6-4B70-A52C-2164D2B3001A}</Project>
+      <Name>Shell</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

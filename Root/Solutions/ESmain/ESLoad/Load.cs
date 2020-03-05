@@ -26,7 +26,20 @@ namespace ESLoad
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+			start = DateTime.Now;
 			
+		}
+		
+		
+		/// <summary>
+		/// Counting the time.
+		/// </summary>
+		DateTime start;
+		int span = 7;
+		void Timer1Tick(object sender, EventArgs e)
+		{
+			if((DateTime.Now - start).Seconds >= span)
+				this.Close();
 			
 		}
 	}

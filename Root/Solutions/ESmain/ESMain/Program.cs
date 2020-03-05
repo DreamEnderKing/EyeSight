@@ -59,16 +59,29 @@ namespace ESMain
 		
 		private void login_Exit(object sender, EventArgs e)
 		{
-			Desktop d = new Desktop();
-			d.Show();
-			d.Closed += desktop_Exit;
+			Login form = (Login)sender;
+			if(!form.quitForRestart)
+			{
+				Desktop d = new Desktop();
+				d.Show();
+				d.Closed += desktop_Exit;
+			}
+			else
+			{
+				Shutdown s = new Shutdown();
+				s.Show();
+				s.Closed += shutdown_Exit;
+				s.quitForRestart = true;
+			}
 		}
 		
 		private void desktop_Exit(object sender, EventArgs e)
 		{
+			Desktop form = (Desktop)sender;
 			Shutdown s = new Shutdown();
 			s.Show();
 			s.Closed += shutdown_Exit;
+			s.quitForRestart = form.quitForRestart;
 		}
 		
 		private void shutdown_Exit(object sender, EventArgs e)

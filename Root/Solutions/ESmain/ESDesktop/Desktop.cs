@@ -28,5 +28,8 @@ namespace ESDesktop
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		public bool quitForRestart = false;
+		
 	}
 }

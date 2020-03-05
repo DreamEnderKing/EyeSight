@@ -28,9 +28,17 @@ namespace ESLog
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		
+		public bool quitForRestart = false;
 				
 		void PicturePicker1Click(object sender, EventArgs e)
 		{
 		}
+		
+		private void LoginSizeChanged(object sender, EventArgs e)
+		{
+			InitPaint();
+		}
+
 	}
 }
