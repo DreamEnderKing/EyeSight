@@ -44,6 +44,9 @@
     <BaseIntermediateOutputPath>..\..\..\Temp\</BaseIntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Shell">
+      <HintPath>..\..\..\System\FrmDrv\Shell.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -65,6 +68,9 @@
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.InitPaint.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.Perf.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="PicturePicker.cs" />

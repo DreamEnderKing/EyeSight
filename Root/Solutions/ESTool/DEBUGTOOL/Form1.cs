@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Shell;
 
 namespace DEBUGTOOL
 {
@@ -29,5 +30,14 @@ namespace DEBUGTOOL
 			//
 		}
 		
+		int x = 0;
+		int y = 0;
+		void Button1Click(object sender, EventArgs e)
+		{
+			Img i = new Img();
+			Color c = i.getAverage((Bitmap)BackgroundImage, new Rectangle(button2.Location, button2.Size));
+			button2.BackColor = c;
+			button2.ForeColor = i.simplifyColor(i.reverseColor(c));
+		}
 	}
 }

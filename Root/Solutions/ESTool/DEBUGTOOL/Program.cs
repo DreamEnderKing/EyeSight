@@ -7,6 +7,8 @@
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
+using System.Threading;
+using System.Windows.Forms;
 using Shell;
 
 namespace DEBUGTOOL
@@ -27,11 +29,11 @@ namespace DEBUGTOOL
 			fs.WriteByte(Convert.ToByte('a'));
 			*/
 			string s = Console.ReadLine();
+			
 			if(s.Equals("f"))
 			{
-				Form1 f = new Form1();
-				f.ShowDialog();
-				//while(
+				Application.EnableVisualStyles();
+				Application.Run(new Form1());
 			}
 			else
 			{
@@ -41,6 +43,13 @@ namespace DEBUGTOOL
 				Console.ReadKey(true);
 			}
 			
+		}
+		
+		private static async void showWindow()
+		{
+			Form1 f = new Form1();
+			f.Show();
+
 		}
 	}
 }

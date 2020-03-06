@@ -1,7 +1,0 @@
-I:\EyeSight\Root\Solutions\ESTool\Temp\bin\Debug\Temp.dll
-I:\EyeSight\Root\Solutions\ESTool\Temp\bin\Debug\Temp.pdb
-I:\EyeSight\Root\Solutions\ESTool\Temp\obj\Debug\Temp.csprojResolveAssemblyReference.cache
-I:\EyeSight\Root\Solutions\ESTool\Temp\obj\Debug\Temp.dll
-I:\EyeSight\Root\Solutions\ESTool\Temp\obj\Debug\Temp.pdb
-I:\EyeSight\Root\System\FrmDrv\Temp.dll
-I:\EyeSight\Root\System\FrmDrv\Temp.pdb

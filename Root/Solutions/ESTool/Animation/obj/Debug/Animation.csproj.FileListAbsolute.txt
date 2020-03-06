@@ -1,8 +1,0 @@
-I:\EyeSight\Root\Solutions\ESTool\Animation\obj\Debug\Animation.csprojResolveAssemblyReference.cache
-I:\EyeSight\Root\Solutions\ESTool\Animation\bin\Debug\Animation.dll
-I:\EyeSight\Root\Solutions\ESTool\Animation\bin\Debug\Animation.pdb
-I:\EyeSight\Root\Solutions\ESTool\Animation\obj\Debug\Animation.dll
-I:\EyeSight\Root\Solutions\ESTool\Animation\obj\Debug\Animation.pdb
-E:\2345下载\EyeSight\Root\Solutions\ESTool\Animation\obj\Debug\Animation.csprojResolveAssemblyReference.cache
-E:\2345下载\EyeSight\Root\Solutions\ESTool\Animation\obj\Debug\Animation.dll
-E:\2345下载\EyeSight\Root\Solutions\ESTool\Animation\obj\Debug\Animation.pdb

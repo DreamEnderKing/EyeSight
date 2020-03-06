@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Shell;
 
 namespace ESLog
 {
@@ -23,7 +24,8 @@ namespace ESLog
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			
+			InitPaint();
+			InitColor(this, new EventArgs());
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//

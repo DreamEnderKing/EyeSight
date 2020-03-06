@@ -40,16 +40,15 @@ namespace ESLog
 			this.UserIcon = new System.Windows.Forms.PictureBox();
 			this.BackBtn = new System.Windows.Forms.PictureBox();
 			this.ForeBtn = new System.Windows.Forms.PictureBox();
-			this.SubmitBtn = new System.Windows.Forms.PictureBox();
 			this.KeyField = new System.Windows.Forms.TextBox();
 			this.WaitImg = new System.Windows.Forms.PictureBox();
 			this.WelText = new System.Windows.Forms.Label();
 			this.NameText = new System.Windows.Forms.Label();
 			this.BackimgPan = new System.Windows.Forms.Panel();
+			this.SubmitBtn = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.UserIcon)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.BackBtn)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ForeBtn)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.SubmitBtn)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.WaitImg)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -86,22 +85,14 @@ namespace ESLog
 			this.ForeBtn.TabIndex = 2;
 			this.ForeBtn.TabStop = false;
 			// 
-			// SubmitBtn
-			// 
-			this.SubmitBtn.BackColor = System.Drawing.Color.Transparent;
-			this.SubmitBtn.Image = ((System.Drawing.Image)(resources.GetObject("SubmitBtn.Image")));
-			this.SubmitBtn.Location = new System.Drawing.Point(124, 201);
-			this.SubmitBtn.Name = "SubmitBtn";
-			this.SubmitBtn.Size = new System.Drawing.Size(55, 53);
-			this.SubmitBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-			this.SubmitBtn.TabIndex = 3;
-			this.SubmitBtn.TabStop = false;
-			// 
 			// KeyField
 			// 
+			this.KeyField.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.KeyField.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.KeyField.Location = new System.Drawing.Point(265, 94);
 			this.KeyField.Name = "KeyField";
-			this.KeyField.Size = new System.Drawing.Size(132, 21);
+			this.KeyField.PasswordChar = '*';
+			this.KeyField.Size = new System.Drawing.Size(132, 39);
 			this.KeyField.TabIndex = 4;
 			// 
 			// WaitImg
@@ -114,25 +105,33 @@ namespace ESLog
 			this.WaitImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.WaitImg.TabIndex = 5;
 			this.WaitImg.TabStop = false;
+			this.WaitImg.Visible = false;
 			// 
 			// WelText
 			// 
 			this.WelText.BackColor = System.Drawing.Color.Transparent;
+			this.WelText.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.WelText.ForeColor = System.Drawing.Color.Aqua;
 			this.WelText.Location = new System.Drawing.Point(158, 279);
 			this.WelText.Name = "WelText";
 			this.WelText.Size = new System.Drawing.Size(164, 40);
 			this.WelText.TabIndex = 6;
-			this.WelText.Text = "label1";
+			this.WelText.Text = "Welcome";
+			this.WelText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.WelText.Visible = false;
 			// 
 			// NameText
 			// 
 			this.NameText.BackColor = System.Drawing.Color.Transparent;
-			this.NameText.Font = new System.Drawing.Font("宋体", 30.0F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)8));
+			this.NameText.Font = new System.Drawing.Font("宋体", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(8)));
+			this.NameText.ForeColor = System.Drawing.Color.Aqua;
 			this.NameText.Location = new System.Drawing.Point(243, 215);
 			this.NameText.Name = "NameText";
 			this.NameText.Size = new System.Drawing.Size(333, 38);
 			this.NameText.TabIndex = 7;
 			this.NameText.Text = "Username";
+			this.NameText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.NameText.Click += new System.EventHandler(this.InitColor);
 			// 
 			// BackimgPan
 			// 
@@ -142,17 +141,32 @@ namespace ESLog
 			this.BackimgPan.Size = new System.Drawing.Size(270, 153);
 			this.BackimgPan.TabIndex = 8;
 			// 
+			// SubmitBtn
+			// 
+			this.SubmitBtn.BackColor = System.Drawing.Color.Transparent;
+			this.SubmitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.SubmitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.SubmitBtn.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.SubmitBtn.ForeColor = System.Drawing.Color.Aqua;
+			this.SubmitBtn.Location = new System.Drawing.Point(249, 343);
+			this.SubmitBtn.Name = "SubmitBtn";
+			this.SubmitBtn.Size = new System.Drawing.Size(130, 50);
+			this.SubmitBtn.TabIndex = 9;
+			this.SubmitBtn.Text = "Go";
+			this.SubmitBtn.UseVisualStyleBackColor = false;
+			// 
 			// Login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(841, 579);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.ClientSize = new System.Drawing.Size(947, 579);
+			this.Controls.Add(this.SubmitBtn);
 			this.Controls.Add(this.BackimgPan);
 			this.Controls.Add(this.NameText);
 			this.Controls.Add(this.WelText);
 			this.Controls.Add(this.WaitImg);
 			this.Controls.Add(this.KeyField);
-			this.Controls.Add(this.SubmitBtn);
 			this.Controls.Add(this.ForeBtn);
 			this.Controls.Add(this.BackBtn);
 			this.Controls.Add(this.UserIcon);
@@ -161,11 +175,12 @@ namespace ESLog
 			this.Text = "Login";
 			this.TransparencyKey = System.Drawing.Color.Fuchsia;
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.Load += new System.EventHandler(this.InitColor);
+			this.BackColorChanged += new System.EventHandler(this.InitColor);
 			this.SizeChanged += new System.EventHandler(this.LoginSizeChanged);
 			((System.ComponentModel.ISupportInitialize)(this.UserIcon)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.BackBtn)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ForeBtn)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.SubmitBtn)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.WaitImg)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
@@ -175,9 +190,10 @@ namespace ESLog
 		private System.Windows.Forms.Label WelText;
 		private System.Windows.Forms.PictureBox WaitImg;
 		private System.Windows.Forms.TextBox KeyField;
-		private System.Windows.Forms.PictureBox SubmitBtn;
+		private System.Windows.Forms.Button SubmitBtn;
 		private System.Windows.Forms.PictureBox ForeBtn;
 		private System.Windows.Forms.PictureBox BackBtn;
 		private System.Windows.Forms.PictureBox UserIcon;
+		
 	}
 }

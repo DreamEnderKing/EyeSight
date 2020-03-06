@@ -36,6 +36,7 @@ namespace DEBUGTOOL
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
@@ -48,21 +49,27 @@ namespace DEBUGTOOL
 			this.button1.TabIndex = 0;
 			this.button1.Text = "button1";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.Button1Click);
 			// 
 			// button2
 			// 
+			this.button2.BackColor = System.Drawing.Color.Chartreuse;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.button2.Location = new System.Drawing.Point(65, 177);
 			this.button2.Name = "button2";
 			this.button2.Size = new System.Drawing.Size(173, 49);
 			this.button2.TabIndex = 1;
 			this.button2.Text = "button2";
-			this.button2.UseVisualStyleBackColor = true;
+			this.button2.UseVisualStyleBackColor = false;
 			// 
 			// Form1
 			// 
+			this.AcceptButton = this.button1;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(412, 301);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+			this.ClientSize = new System.Drawing.Size(478, 343);
 			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Name = "Form1";
