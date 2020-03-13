@@ -29,10 +29,16 @@ namespace Shell
 			System.Collections.Generic.IEnumerable<DirectoryInfo> dirs = d.EnumerateDirectories();
 			foreach(var file in files)
 			{
-				file.Delete();
+				try {
+					file.Delete();
+				} catch (Exception) {
+				}
 			}
 			foreach (var dir in dirs) {
-				dir.Delete(true);
+				try {
+					dir.Delete(true);
+				} catch (Exception) {
+				}
 			}
 		}
 		

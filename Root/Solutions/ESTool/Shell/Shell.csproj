@@ -87,7 +87,14 @@
       <DependentUpon>Animate.cs</DependentUpon>
     </Compile>
     <Compile Include="SYS.cs" />
+    <Compile Include="TagData.cs" />
     <Compile Include="Temp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Libs\Libs.csproj">
+      <Project>{9778D46C-53FF-4844-BE16-8729583F6A40}</Project>
+      <Name>Libs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
