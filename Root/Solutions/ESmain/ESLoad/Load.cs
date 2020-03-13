@@ -9,6 +9,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Shell;
 
 namespace ESLoad
 {
@@ -41,6 +42,11 @@ namespace ESLoad
 			if((DateTime.Now - start).Seconds >= span)
 				this.Close();
 			
+		}
+		
+		void LoadLoad(object sender, EventArgs e)
+		{
+			new Temp().ClearTemp();
 		}
 	}
 }

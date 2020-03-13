@@ -135,6 +135,8 @@ namespace ESLog
 			// 
 			// BackimgPan
 			// 
+			this.BackimgPan.AutoScroll = true;
+			this.BackimgPan.AutoScrollMargin = new System.Drawing.Size(5, 0);
 			this.BackimgPan.BackColor = System.Drawing.Color.LightGray;
 			this.BackimgPan.Location = new System.Drawing.Point(568, 29);
 			this.BackimgPan.Name = "BackimgPan";

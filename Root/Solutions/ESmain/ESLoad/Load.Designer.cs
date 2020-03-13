@@ -101,6 +101,7 @@ namespace ESLoad
 			this.Text = "Load";
 			this.TransparencyKey = System.Drawing.Color.Fuchsia;
 			this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+			this.Load += new System.EventHandler(this.LoadLoad);
 			this.Resize += new System.EventHandler(this.InitPaint);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

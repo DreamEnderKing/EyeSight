@@ -22,7 +22,8 @@ namespace DEBUGTOOL
 			// TODO: Implement Functionality Here
 			Console.WriteLine(Shell.SYS.path);
 			
-			new Temp().ClearTemp();
+			//MessageBox.Show(new Number().From10To64(Int32.MaxValue));
+			new Temp().LoadFile("E:\\123.vbs");
 			/*
 			string s = new Temp.Temp().LoadFile("D:\\p.ini");
 			System.IO.FileStream fs = new System.IO.FileStream(s, System.IO.FileMode.Open);

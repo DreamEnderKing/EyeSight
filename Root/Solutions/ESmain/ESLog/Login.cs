@@ -29,6 +29,8 @@ namespace ESLog
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+			BackImgLoad();
+			BackimgPanLoad();
 		}
 		
 		public bool quitForRestart = false;
@@ -40,6 +42,8 @@ namespace ESLog
 		private void LoginSizeChanged(object sender, EventArgs e)
 		{
 			InitPaint();
+			BackimgPanLoad();
+
 		}
 
 	}

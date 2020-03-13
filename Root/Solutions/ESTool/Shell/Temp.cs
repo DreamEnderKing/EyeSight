@@ -36,20 +36,22 @@ namespace Shell
 			}
 		}
 		
-		public string LoadFile(string filename)
+		public Stream LoadFile(string filename)
 		{
 			//check the file
 			if(!File.Exists(filename)) throw new FileNotFoundException();
 			
 			//create random seed
 			DateTime now = DateTime.Now;
-			string seed = new Random(now.Year).Next().ToString() + new Random(now.Month).Next().ToString() + new Random(now.Day).Next().ToString() + new Random(now.Hour).Next().ToString() + new Random(now.Minute).Next().ToString() + new Random(now.Second).Next().ToString() + new Random(now.Millisecond).Next().ToString();
+			Number n = new Number();
+			string seed = n.From10To64(new Random(now.Year).Next()) + n.From10To64(new Random(now.Month).Next()) + n.From10To64(new Random(now.Day).Next()) + n.From10To64(new Random(now.Hour).Next()) + n.From10To64(new Random(now.Minute).Next()) + n.From10To64(new Random(now.Second).Next()) + n.From10To64(new Random(now.Millisecond).Next());
 			
 			//copy to temporary file
 			File.Copy(filename, SYS.path + "\\Root\\Temp\\" + seed);
-			return SYS.path + "\\Root\\Temp\\" + seed;
+			return new FileStream(SYS.path + "\\Root\\Temp\\" + seed,FileMode.OpenOrCreate);
 			
 		}
+		
 
 	}
 }
