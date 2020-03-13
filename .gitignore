@@ -29,3 +29,5 @@ Gemfile.lock
 
 root/system
 root/temp
+*/bin
+*/obj
