@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shell", "Shell\Shell.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libs", "Libs\Libs.csproj", "{9778D46C-53FF-4844-BE16-8729583F6A40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserCon", "UserCon\UserCon.csproj", "{B0A6C9EA-5BAC-4177-9E41-29AD48E62D6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,5 +28,9 @@ Global
 		{9778D46C-53FF-4844-BE16-8729583F6A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9778D46C-53FF-4844-BE16-8729583F6A40}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9778D46C-53FF-4844-BE16-8729583F6A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A6C9EA-5BAC-4177-9E41-29AD48E62D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A6C9EA-5BAC-4177-9E41-29AD48E62D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A6C9EA-5BAC-4177-9E41-29AD48E62D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A6C9EA-5BAC-4177-9E41-29AD48E62D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal
