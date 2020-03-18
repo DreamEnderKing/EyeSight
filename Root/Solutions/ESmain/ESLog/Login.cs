@@ -29,8 +29,8 @@ namespace ESLog
 			//
 			InitPaint();
 			InitColor(this, new EventArgs());
-			BackImgLoad();
 			InitFont();
+			BackImgLoad();
 		}
 		
 		public bool quitForRestart = false;

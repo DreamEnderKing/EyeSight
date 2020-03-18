@@ -27,7 +27,6 @@ Gemfile.lock
 .DS_Store
 
 
-root/system
 root/temp
 */bin
 */obj

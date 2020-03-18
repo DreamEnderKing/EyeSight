@@ -48,6 +48,10 @@ namespace ESLog
 				
 				BackimgPan.Size = new System.Drawing.Size(DpiX * 3, DpiY * 2);
 				BackimgPan.Location = new System.Drawing.Point(0, 0);
+				
+				label1.Size = new Size(BackimgPan.Width - 2, label1.Font.Height + 5);
+				label1.Location = new Point(0, 0);
+				
 			}
 		}
 		
@@ -64,11 +68,12 @@ namespace ESLog
 		/// <summary>
 		/// Init the font.
 		/// </summary>
+		private System.Drawing.Text.PrivateFontCollection pvf = new System.Drawing.Text.PrivateFontCollection();
 		private void InitFont()
 		{
-			System.Drawing.Text.PrivateFontCollection pvf = new System.Drawing.Text.PrivateFontCollection();
 			pvf.AddFontFile(SYS.path + "\\Root\\System\\Fonts\\comic.ttf");
-			label1.Font = new Font(pvf.Families[0], 15.0F);
+			label1.Font = new Font(pvf.Families[0], label1.Width / (label1.Text.Length + 2), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
 		}
 		
 		

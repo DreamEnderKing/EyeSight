@@ -59,6 +59,6 @@ namespace Shell
 	
 	public class FormControlTagData : TagData
 	{
-		
+		public Boolean needDispose = false;
 	}
 }
