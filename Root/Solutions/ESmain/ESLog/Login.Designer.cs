@@ -45,11 +45,14 @@ namespace ESLog
 			this.WelText = new System.Windows.Forms.Label();
 			this.NameText = new System.Windows.Forms.Label();
 			this.BackimgPan = new System.Windows.Forms.Panel();
+			this.label1 = new System.Windows.Forms.Label();
 			this.SubmitBtn = new System.Windows.Forms.Button();
+			this.Timer1 = new UserCon.Timer_Clean();
 			((System.ComponentModel.ISupportInitialize)(this.UserIcon)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.BackBtn)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.ForeBtn)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.WaitImg)).BeginInit();
+			this.BackimgPan.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// UserIcon
@@ -137,11 +140,21 @@ namespace ESLog
 			// 
 			this.BackimgPan.AutoScroll = true;
 			this.BackimgPan.AutoScrollMargin = new System.Drawing.Size(5, 0);
-			this.BackimgPan.BackColor = System.Drawing.Color.LightGray;
+			this.BackimgPan.BackColor = System.Drawing.Color.White;
+			this.BackimgPan.Controls.Add(this.label1);
 			this.BackimgPan.Location = new System.Drawing.Point(568, 29);
 			this.BackimgPan.Name = "BackimgPan";
 			this.BackimgPan.Size = new System.Drawing.Size(270, 153);
 			this.BackimgPan.TabIndex = 8;
+			// 
+			// label1
+			// 
+			this.label1.Font = new System.Drawing.Font("Constantia", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(29, 26);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(227, 46);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Select your image here:";
 			// 
 			// SubmitBtn
 			// 
@@ -156,6 +169,11 @@ namespace ESLog
 			this.SubmitBtn.TabIndex = 9;
 			this.SubmitBtn.Text = "Go";
 			this.SubmitBtn.UseVisualStyleBackColor = false;
+			// 
+			// Timer1
+			// 
+			this.Timer1.Enabled = true;
+			this.Timer1.Interval = 120000;
 			// 
 			// Login
 			// 
@@ -184,9 +202,11 @@ namespace ESLog
 			((System.ComponentModel.ISupportInitialize)(this.BackBtn)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.ForeBtn)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.WaitImg)).EndInit();
+			this.BackimgPan.ResumeLayout(false);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 		}
+		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel BackimgPan;
 		private System.Windows.Forms.Label NameText;
 		private System.Windows.Forms.Label WelText;
@@ -196,6 +216,7 @@ namespace ESLog
 		private System.Windows.Forms.PictureBox ForeBtn;
 		private System.Windows.Forms.PictureBox BackBtn;
 		private System.Windows.Forms.PictureBox UserIcon;
+		private UserCon.Timer_Clean Timer1;
 		
 	}
 }

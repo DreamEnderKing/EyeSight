@@ -24,21 +24,17 @@ namespace ESLog
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			InitPaint();
-			InitColor(this, new EventArgs());
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
+			InitPaint();
+			InitColor(this, new EventArgs());
 			BackImgLoad();
-			BackimgPanLoad();
+			InitFont();
 		}
 		
 		public bool quitForRestart = false;
 				
-		void PicturePicker1Click(object sender, EventArgs e)
-		{
-		}
-		
 		private void LoginSizeChanged(object sender, EventArgs e)
 		{
 			InitPaint();

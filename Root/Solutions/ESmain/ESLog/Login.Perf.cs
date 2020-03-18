@@ -8,6 +8,7 @@
  */
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
 using System.Reflection;
@@ -33,6 +34,7 @@ namespace ESLog
 				if (control.GetType()==typeof(PicturePicker))
 				{
 					control.Visible = false;
+					((Shell.FormControlTagData)control.Tag).needDispose = true;
 				}
 			}
 			DirectoryInfo d = new DirectoryInfo(SYS.path + @"\User\Common\LoginImg");
@@ -41,13 +43,24 @@ namespace ESLog
 				PicturePicker p = new PicturePicker();
 				x = n % 4;
 				y = n / 4;
+				Shell.FormControlTagData dat = new FormControlTagData();
+				p.Tag = dat;
 				BackimgPan.Controls.Add(p);
 				p.Size = new Size(BackimgPan.Width / 4 - 6, BackimgPan.Height / 3 - 8);
 				p.Location = new Point(BackimgPan.Width / 4 * x + 3, BackimgPan.Height / 3 * y + 54);
 				p.Image = new Bitmap(new Temp().LoadFile(file.FullName));
-				p.Name = file.Name;
 				n++;
+				Timer1.AddControl(p);
 			}
+		}
+		#endregion
+		
+		#region AccountLogin
+		private HashSet<String> Users;
+		
+		private void readUsers()
+		{
+			
 		}
 		#endregion
 	}
