@@ -8,7 +8,9 @@
  */
 using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
+using ICSharpCode.SharpZipLib.Tar;
 using Shell;
 
 namespace DEBUGTOOL
@@ -38,6 +40,23 @@ namespace DEBUGTOOL
 			Color c = i.getAverage((Bitmap)BackgroundImage, new Rectangle(button2.Location, button2.Size));
 			button2.BackColor = c;
 			button2.ForeColor = i.simplifyColor(i.reverseColor(c));
+		}
+		
+		void Button2Click(object sender, EventArgs e)
+		{
+			FileStream stream = new FileStream(Application.StartupPath + "\\abc.tar", FileMode.OpenOrCreate);
+			MessageBox.Show(stream.Name);
+			TarOutputStream output = new TarOutputStream(stream);
+			TarHeader header = new TarHeader();
+			header.Name = "123.txt";
+			header.Size = 0;
+			TarEntry entry = new TarEntry(header);
+			entry.TarHeader.Size += 1;
+			output.PutNextEntry(entry);
+			output.WriteByte(Convert.ToByte('a'));
+			output.Flush();
+			output.Dispose();
+			
 		}
 	}
 }

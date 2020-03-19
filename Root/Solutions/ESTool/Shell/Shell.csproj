@@ -94,9 +94,6 @@
     <Compile Include="TagData.cs" />
     <Compile Include="Temp.cs" />
     <Compile Include="UserInfo.cs" />
-    <Compile Include="UserInfo.Func.cs">
-      <DependentUpon>UserInfo.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Libs\Libs.csproj">

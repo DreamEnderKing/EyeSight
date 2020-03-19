@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using ICSharpCode.SharpZipLib;
+using ICSharpCode.SharpZipLib.Tar;
 
 namespace Shell
 {
@@ -25,11 +25,6 @@ namespace Shell
 	/// </summary>
 	public partial class UserInfo
 	{
-		public UserInfo(string name)
-		{
-			
-		}
-		
 		private bool keySet = false;
 		
 		private String Key;
@@ -63,6 +58,15 @@ namespace Shell
 		{
 			_icon = icon;
 		}
+		
+		public UserInfo BeginInit()
+		{
+			UserInfo user = new UserInfo();
+			user.SetKey(_key);
+			
+			
+			return user;
+		}
 	}
 	
 	#endregion
@@ -74,10 +78,10 @@ namespace Shell
 			
 		}
 		
-		public static UserInfo Get(string name)
-		{
+		//public static UserInfo Get(string name)
+		//{
 			
-		}
+		//}
 	}
 	
 	#region Exceptions
@@ -92,10 +96,10 @@ namespace Shell
 		{
 			switch (t) {
 				case UserExpType.Notfound:
-					Message = "User not found.";
+					//Message = "User not found.";
 					break;
 				case UserExpType.KeyHadSet:
-					Message = "The key can't be set twice.";
+					//Message = "The key can't be set twice.";
 					break;
 				default:
 					throw new Exception("Invalid value for UserExpType");
