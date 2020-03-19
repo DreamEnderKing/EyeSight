@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>HslControls</id>
+    <version>2.3.0</version>
+    <title>一个工业物联网的控件库，基于C#开发，配套HslCommunication组件可以实现工业上位机软件的快速开发，支持常用的工业图形化控件，快速的集成界面开发。</title>
+    <authors>Richard.Hu</authors>
+    <owners>Richard.Hu</owners>
+    <projectUrl>https://github.com/dathlin/HslControlsDemo</projectUrl>
+    <iconUrl>https://github.com/dathlin/HslCommunication/raw/master/HslCommunicationDemo/hslcontrols.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>一个工业物联网的控件库，基于C#开发，配套HslCommunication组件可以实现工业上位机软件的快速开发，支持常用的工业图形化控件，快速的集成界面开发。
+主要包含了按钮，开关，进度条，信号灯，数码管，时钟，曲线显示控件，仪表盘控件，管道控件，瓶子控件，饼图控件，传送带控件，温度计控件，鼓风机控件，阀门控件，电池控件等等。</description>
+    <summary>一个工业物联网的控件库，基于C#开发，配套HslCommunication组件可以实现工业上位机软件的快速开发，支持常用的工业图形化控件，快速的集成界面开发。
+主要包含了按钮，开关，进度条，信号灯，数码管，时钟，曲线显示控件，仪表盘控件，管道控件，瓶子控件，饼图控件，传送带控件，温度计控件，鼓风机控件，阀门控件，电池控件等等。</summary>
+    <releaseNotes>1. HslStatusManagement：对每个的点阵信息，支持设置消息提示，当光标挪动到点阵上，提示信息文本。
+2. HslTruck: 新增一个卡车控件，支持两种状态，方向变换，升降功能，目前仅支持winform。</releaseNotes>
+  </metadata>
+</package>

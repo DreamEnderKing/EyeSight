@@ -34,7 +34,7 @@ namespace ESLog
 				if (control.GetType()==typeof(PicturePicker))
 				{
 					control.Visible = false;
-					((Shell.FormControlTagData)control.Tag).needDispose = true;
+					//((Shell.FormControlTagData)control.Tag).needDispose = true;
 				}
 			}
 			DirectoryInfo d = new DirectoryInfo(SYS.path + @"\User\Common\LoginImg");
@@ -46,11 +46,11 @@ namespace ESLog
 				Shell.FormControlTagData dat = new FormControlTagData();
 				p.Tag = dat;
 				BackimgPan.Controls.Add(p);
-				p.Size = new Size(BackimgPan.Width / 4 - 6, BackimgPan.Height / 3 - 8);
-				p.Location = new Point(BackimgPan.Width / 4 * x + 3, BackimgPan.Height / 3 * y + 54);
+				p.Size = new Size((BackimgPan.Width / 4 - 6) - 6, BackimgPan.Height / 3 - 8);
+				p.Location = new Point((BackimgPan.Width / 4 - 6) * x + 3, BackimgPan.Height / 3 * y + 10 + label1.Height);
 				p.Image = new Bitmap(new Temp().LoadFile(file.FullName));
 				n++;
-				Timer1.AddControl(p);
+				//Timer1.AddControl(p);
 			}
 		}
 		#endregion

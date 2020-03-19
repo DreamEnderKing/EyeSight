@@ -45,6 +45,9 @@
     <BaseIntermediateOutputPath>..\..\..\Temp\</BaseIntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\packages\SharpZipLib.1.2.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -66,6 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animate.cs" />
@@ -89,6 +93,10 @@
     <Compile Include="SYS.cs" />
     <Compile Include="TagData.cs" />
     <Compile Include="Temp.cs" />
+    <Compile Include="UserInfo.cs" />
+    <Compile Include="UserInfo.Func.cs">
+      <DependentUpon>UserInfo.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Libs\Libs.csproj">

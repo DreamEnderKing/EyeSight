@@ -52,6 +52,7 @@ namespace ESLog
 				label1.Size = new Size(BackimgPan.Width - 2, label1.Font.Height + 5);
 				label1.Location = new Point(0, 0);
 				
+				
 			}
 		}
 		

@@ -44,7 +44,7 @@ namespace ESLog
 			this.WaitImg = new System.Windows.Forms.PictureBox();
 			this.WelText = new System.Windows.Forms.Label();
 			this.NameText = new System.Windows.Forms.Label();
-			this.BackimgPan = new System.Windows.Forms.Panel();
+			this.BackimgPan = new MetroFramework.Controls.MetroPanel();
 			this.label1 = new System.Windows.Forms.Label();
 			this.SubmitBtn = new System.Windows.Forms.Button();
 			this.Timer1 = new UserCon.Timer_Clean();
@@ -142,10 +142,16 @@ namespace ESLog
 			this.BackimgPan.AutoScrollMargin = new System.Drawing.Size(5, 0);
 			this.BackimgPan.BackColor = System.Drawing.Color.White;
 			this.BackimgPan.Controls.Add(this.label1);
+			this.BackimgPan.HorizontalScrollbarBarColor = true;
+			this.BackimgPan.HorizontalScrollbarHighlightOnWheel = false;
+			this.BackimgPan.HorizontalScrollbarSize = 0;
 			this.BackimgPan.Location = new System.Drawing.Point(568, 29);
 			this.BackimgPan.Name = "BackimgPan";
 			this.BackimgPan.Size = new System.Drawing.Size(270, 153);
 			this.BackimgPan.TabIndex = 8;
+			this.BackimgPan.VerticalScrollbarBarColor = true;
+			this.BackimgPan.VerticalScrollbarHighlightOnWheel = true;
+			this.BackimgPan.VerticalScrollbarSize = 10;
 			// 
 			// label1
 			// 
@@ -206,7 +212,7 @@ namespace ESLog
 			this.PerformLayout();
 		}
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Panel BackimgPan;
+		private MetroFramework.Controls.MetroPanel BackimgPan;
 		private System.Windows.Forms.Label NameText;
 		private System.Windows.Forms.Label WelText;
 		private System.Windows.Forms.PictureBox WaitImg;
