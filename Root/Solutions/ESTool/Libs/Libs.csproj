@@ -46,6 +46,8 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -53,8 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="HandleLib.cs" />
-    <Compile Include="LangSup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resx.resx">
+      <DependentUpon>Resx.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

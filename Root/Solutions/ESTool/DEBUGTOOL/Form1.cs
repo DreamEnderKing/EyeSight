@@ -36,27 +36,14 @@ namespace DEBUGTOOL
 		int y = 0;
 		void Button1Click(object sender, EventArgs e)
 		{
-			Img i = new Img();
-			Color c = i.getAverage((Bitmap)BackgroundImage, new Rectangle(button2.Location, button2.Size));
-			button2.BackColor = c;
-			button2.ForeColor = i.simplifyColor(i.reverseColor(c));
+			BackgroundImage = Libs.ResxOperater.GetImage("B3user_newUser");
 		}
 		
 		void Button2Click(object sender, EventArgs e)
 		{
-			FileStream stream = new FileStream(Application.StartupPath + "\\abc.tar", FileMode.OpenOrCreate);
-			MessageBox.Show(stream.Name);
-			TarOutputStream output = new TarOutputStream(stream);
-			TarHeader header = new TarHeader();
-			header.Name = "123.txt";
-			header.Size = 0;
-			TarEntry entry = new TarEntry(header);
-			entry.TarHeader.Size += 1;
-			output.PutNextEntry(entry);
-			output.WriteByte(Convert.ToByte('a'));
-			output.Flush();
-			output.Dispose();
-			
+			NewUserInfo user = UserOperater.Create("User");
+			user.SetKey("Key");
+			user.BeginInit();
 		}
 	}
 }

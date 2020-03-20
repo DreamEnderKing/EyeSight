@@ -42,7 +42,7 @@ namespace Shell
 			}
 		}
 		
-		public Stream LoadFile(string filename)
+		public FileStream LoadFile(string filename)
 		{
 			//check the file
 			if(!File.Exists(filename)) throw new FileNotFoundException();
@@ -58,6 +58,15 @@ namespace Shell
 			
 		}
 		
+		public FileStream CreateFile()
+		{
+			//create random seed
+			DateTime now = DateTime.Now;
+			Number n = new Number();
+			string seed = n.From10To64(new Random(now.Year).Next()) + n.From10To64(new Random(now.Month).Next()) + n.From10To64(new Random(now.Day).Next()) + n.From10To64(new Random(now.Hour).Next()) + n.From10To64(new Random(now.Minute).Next()) + n.From10To64(new Random(now.Second).Next()) + n.From10To64(new Random(now.Millisecond).Next());
+			return new FileStream(SYS.path + "\\Root\\Temp\\" + seed,FileMode.OpenOrCreate);
+			
+		}
 
 	}
 }

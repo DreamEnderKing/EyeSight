@@ -77,6 +77,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Libs\Libs.csproj">
+      <Project>{9778D46C-53FF-4844-BE16-8729583F6A40}</Project>
+      <Name>Libs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Shell\Shell.csproj">
       <Project>{8E973EB8-A1B6-4B70-A52C-2164D2B3001A}</Project>
       <Name>Shell</Name>
