@@ -25,17 +25,25 @@ namespace Shell
 	/// </summary>
 	public partial class UserInfo
 	{
+		public UserInfo(string name, string key)
+		{
+			_name = name;
+			_key = key;
+			Init();
+		}
+		
+		protected virtual void Init()
+		{
+			_dir = new DirectoryInfo(SYS.path + "\\User\\" + _name);
+			
+		}
+		
 		protected string _name;
 		public string Name
 		{
 			get
 			{
 				return _name;
-			}
-			set
-			{
-				_name = value;
-				_dir = new DirectoryInfo(SYS.path + "\\User\\" + _name);
 			}
 		}
 		
@@ -48,18 +56,8 @@ namespace Shell
 			}
 		}
 		
-		private bool keySet = false;
-		
-		protected String Key;
-		public virtual void SetKey(String key)
-		{
-			if (keySet) {
-				throw new UserException(UserExpType.KeyHadSet);
-				return;
-			}
-			Key = key;
-			keySet = true;
-		}
+		protected string _key;
+		protected Image _icon;
 	}
 	
 	/// <summary>
@@ -68,18 +66,14 @@ namespace Shell
 	/// </summary>
 	public class NewUserInfo : UserInfo
 	{
-		public void SetName(String name)
+		public NewUserInfo(string name, string key) : base(name, key)
 		{
-			Name = name;
-		}
-		
-		private string _key;
-		public override void SetKey(String key)
-		{
+			_name = name;
 			_key = key;
+			_icon = Libs.ResxOperater.GetImage("B3user_newUser");
+			Init();
 		}
 		
-		private Image _icon = Libs.ResxOperater.GetImage("B3user_newUser");
 		public void SetIcon(Image icon)
 		{
 			_icon = icon;
@@ -87,8 +81,7 @@ namespace Shell
 		
 		public UserInfo BeginInit()
 		{
-			UserInfo user = new UserInfo();
-			user.SetKey(_key);
+			UserInfo user = new UserInfo(_name,  _key);
 			DirectoryInfo dir = _dir.GetDirectories(".UserInfo")[0];
 			using(FileStream  stream = new FileStream(dir.FullName + "\\data.tar", FileMode.CreateNew))
 			{
@@ -134,9 +127,9 @@ namespace Shell
 	
 	public static class UserOperater
 	{
-		public static NewUserInfo Create(string name)
+		public static NewUserInfo Create(string name, string key)
 		{
-			NewUserInfo user = new NewUserInfo();
+			NewUserInfo user = new NewUserInfo(name, key);
 			if (Directory.Exists(SYS.path + "\\User\\" + name)) {
 				throw new IOException("Name has existed!");
 			}
@@ -148,20 +141,26 @@ namespace Shell
 			dir.CreateSubdirectory("Desktop");
 			dir.CreateSubdirectory("Download");
 			DirectoryInfo info = dir.CreateSubdirectory(".UserInfo");
-			//File.SetAttributes(info.FullName, FileAttributes.Hidden);
-			
-			user.SetName(name);
+			File.SetAttributes(info.FullName, FileAttributes.Hidden);
 			
 			return user;
 		}
 		
 		public static UserInfo Get(string name)
 		{
+			string name = "";
+			string key = "";
+			Image icon = new Bitmap(0, 0);
+			
+			DirectoryInfo userdir = new DirectoryInfo(SYS.path + "\\User");
+			foreach (var dir in collection) {
+				
+			}
+			
 			UserInfo user = new UserInfo();
-			
-			
 			return user;
 		}
+		
 	}
 	
 	#region Exceptions

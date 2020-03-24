@@ -41,8 +41,7 @@ namespace DEBUGTOOL
 		
 		void Button2Click(object sender, EventArgs e)
 		{
-			NewUserInfo user = UserOperater.Create("User");
-			user.SetKey("Key");
+			NewUserInfo user = UserOperater.Create("User", "hello");
 			user.BeginInit();
 		}
 	}
