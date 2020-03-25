@@ -24,6 +24,8 @@ namespace ESLog
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
+			pvf.AddFontFile(SYS.path + "\\Root\\System\\Fonts\\comic.ttf");
+
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -31,6 +33,7 @@ namespace ESLog
 			InitColor(this, new EventArgs());
 			InitFont();
 			BackImgLoad();
+			readUsers();
 		}
 		
 		public bool quitForRestart = false;
@@ -39,7 +42,7 @@ namespace ESLog
 		{
 			InitPaint();
 			BackimgPanLoad();
-
+			InitFont();
 		}
 
 	}

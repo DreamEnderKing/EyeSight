@@ -56,12 +56,63 @@ namespace ESLog
 		#endregion
 		
 		#region AccountLogin
-		private HashSet<String> Users;
+		private List<UserInfo> Users = new List<UserInfo>();
 		
 		private void readUsers()
 		{
-			
+			DirectoryInfo users = new DirectoryInfo(SYS.path + "\\User");
+			foreach (var user in users.GetDirectories()) {
+				if(user.Name.ToLower() == "common") continue;
+				Users.Add(UserOperater.Get(user.Name));
+			}
+			NameText.Text = Users[0].Name;
+			UserIcon.Image = new Img().CutCircle((Bitmap)Users[userIndex].Icon);
 		}
+		
+		private void userLogin(object sender, EventArgs e)
+		{
+			BackBtn.Visible = false;
+			ForeBtn.Visible = false;
+			NameText.Visible = false;
+			if(Users[userIndex].CheckKey(KeyField.Text))
+			{
+				
+			}
+			else
+			{
+				WelText.Text = "fatal password";
+				WelText.Visible = true;
+				DateTime t = DateTime.Now;
+				while ((DateTime.Now - t).Seconds <= 2) {
+					Application.DoEvents();
+				}
+				WelText.Visible = false;
+				BackBtn.Visible = true;
+				ForeBtn.Visible = true;
+				NameText.Visible = true;
+				KeyField.Focus();
+			}
+		}
+		
+		private int userIndex = 0;
+		private void switchBack(object sender, EventArgs e)
+		{
+			userIndex--;
+			if(userIndex < 0) userIndex = Users.Count-1;
+			NameText.Text = Users[userIndex].Name;
+			UserIcon.Image = new Img().CutCircle((Bitmap)Users[userIndex].Icon);
+		}
+		
+		private void switchFore(object sender, EventArgs e)
+		{
+			userIndex++;
+			if(userIndex >= Users.Count) userIndex = 0;
+			NameText.Text = Users[userIndex].Name;
+			UserIcon.Image = new Img().CutCircle((Bitmap)Users[userIndex].Icon);
+
+		}
+		
 		#endregion
+		
 	}
 }

@@ -22,7 +22,7 @@ namespace ESLog
 				int DpiY = Height / 8;
 				
 				UserIcon.Size = new System.Drawing.Size(DpiX * 2, DpiX * 2);
-				UserIcon.Location = new System.Drawing.Point(DpiX * 4, DpiY * 1);
+				UserIcon.Location = new System.Drawing.Point(DpiX * 4, DpiY * 1 / 2);
 				
 				BackBtn.Size = new System.Drawing.Size(DpiX / 2, DpiY / 2);
 				BackBtn.Location = new System.Drawing.Point(DpiX * 3, DpiY * 7 / 2);
@@ -35,13 +35,12 @@ namespace ESLog
 				
 				KeyField.Location = new System.Drawing.Point(DpiX * 7 / 2, DpiY * 9 / 2);
 				KeyField.Size = new System.Drawing.Size(DpiX * 3, DpiY / 2);
-				KeyField.Font = new System.Drawing.Font("宋体", (float)(DpiY / 2 - 6), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
 				
-				WaitImg.Location = new System.Drawing.Point(DpiX * 15 / 4, DpiY * 9 / 2);
+				WaitImg.Location = new System.Drawing.Point(DpiX * 13 / 4, DpiY * 7 / 2);
 				WaitImg.Size = new System.Drawing.Size(DpiX / 2, DpiY / 2);
 				
-				WelText.Size = new System.Drawing.Size(DpiX * 3 / 2, DpiY / 2);
-				WelText.Location = new System.Drawing.Point(DpiX * 19 / 4, DpiY * 9 / 2);
+				WelText.Size = new System.Drawing.Size(DpiX * 5, DpiY / 2);
+				WelText.Location = new System.Drawing.Point(DpiX * 17 / 4, DpiY * 7 / 2);
 				
 				NameText.Size = new System.Drawing.Size(DpiX * 2, DpiY / 2);
 				NameText.Location = new System.Drawing.Point(DpiX * 4, DpiY * 7 / 2);
@@ -72,8 +71,10 @@ namespace ESLog
 		private System.Drawing.Text.PrivateFontCollection pvf = new System.Drawing.Text.PrivateFontCollection();
 		private void InitFont()
 		{
-			pvf.AddFontFile(SYS.path + "\\Root\\System\\Fonts\\comic.ttf");
+			KeyField.Font = new System.Drawing.Font("宋体", KeyField.Height - 6, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
+			NameText.Font = new Font("宋体", NameText.Height - 6, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(8)));
 			label1.Font = new Font(pvf.Families[0], label1.Width / (label1.Text.Length + 2), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.WelText.Font = new System.Drawing.Font("宋体", WelText.Height - 2, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 
 		}
 		

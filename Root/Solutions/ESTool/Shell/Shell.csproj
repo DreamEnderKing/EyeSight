@@ -73,6 +73,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Animate.cs" />
+    <Compile Include="DealImage.cs">
+      <DependentUpon>Img.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fade.cs">
       <DependentUpon>Animate.cs</DependentUpon>
     </Compile>

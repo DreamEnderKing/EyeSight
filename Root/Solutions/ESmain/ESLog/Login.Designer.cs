@@ -76,6 +76,7 @@ namespace ESLog
 			this.BackBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.BackBtn.TabIndex = 1;
 			this.BackBtn.TabStop = false;
+			this.BackBtn.Click += new System.EventHandler(this.switchBack);
 			// 
 			// ForeBtn
 			// 
@@ -87,6 +88,7 @@ namespace ESLog
 			this.ForeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.ForeBtn.TabIndex = 2;
 			this.ForeBtn.TabStop = false;
+			this.ForeBtn.Click += new System.EventHandler(this.switchFore);
 			// 
 			// KeyField
 			// 
@@ -113,7 +115,6 @@ namespace ESLog
 			// WelText
 			// 
 			this.WelText.BackColor = System.Drawing.Color.Transparent;
-			this.WelText.Font = new System.Drawing.Font("宋体", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 			this.WelText.ForeColor = System.Drawing.Color.Aqua;
 			this.WelText.Location = new System.Drawing.Point(158, 279);
 			this.WelText.Name = "WelText";
@@ -142,6 +143,7 @@ namespace ESLog
 			this.BackimgPan.AutoScrollMargin = new System.Drawing.Size(5, 0);
 			this.BackimgPan.BackColor = System.Drawing.Color.White;
 			this.BackimgPan.Controls.Add(this.label1);
+			this.BackimgPan.HorizontalScrollbar = true;
 			this.BackimgPan.HorizontalScrollbarBarColor = true;
 			this.BackimgPan.HorizontalScrollbarHighlightOnWheel = false;
 			this.BackimgPan.HorizontalScrollbarSize = 0;
@@ -149,6 +151,7 @@ namespace ESLog
 			this.BackimgPan.Name = "BackimgPan";
 			this.BackimgPan.Size = new System.Drawing.Size(270, 153);
 			this.BackimgPan.TabIndex = 8;
+			this.BackimgPan.VerticalScrollbar = true;
 			this.BackimgPan.VerticalScrollbarBarColor = true;
 			this.BackimgPan.VerticalScrollbarHighlightOnWheel = true;
 			this.BackimgPan.VerticalScrollbarSize = 10;
@@ -174,6 +177,7 @@ namespace ESLog
 			this.SubmitBtn.TabIndex = 9;
 			this.SubmitBtn.Text = "Go";
 			this.SubmitBtn.UseVisualStyleBackColor = false;
+			this.SubmitBtn.Click += new System.EventHandler(this.userLogin);
 			// 
 			// Timer1
 			// 
@@ -182,6 +186,7 @@ namespace ESLog
 			// 
 			// Login
 			// 
+			this.AcceptButton = SubmitBtn;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));

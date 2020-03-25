@@ -38,6 +38,12 @@ namespace Shell
 			
 		}
 		
+		public void Init(Image icon)
+		{
+			_icon = icon;
+			Init();
+		}
+		
 		protected string _name;
 		public string Name
 		{
@@ -57,7 +63,19 @@ namespace Shell
 		}
 		
 		protected string _key;
+		public bool CheckKey(string k)
+		{
+			return (_key == k);
+		}
+		
 		protected Image _icon;
+		public Image Icon
+		{
+			get
+			{
+				return _icon;
+			}
+		}
 	}
 	
 	/// <summary>
@@ -148,16 +166,32 @@ namespace Shell
 		
 		public static UserInfo Get(string name)
 		{
-			string name = "";
 			string key = "";
-			Image icon = new Bitmap(0, 0);
 			
-			DirectoryInfo userdir = new DirectoryInfo(SYS.path + "\\User");
-			foreach (var dir in collection) {
-				
+			Image icon = new Bitmap(10, 10);
+			
+			DirectoryInfo dir = new DirectoryInfo(SYS.path + "\\User\\" + name);
+			
+			using (FileStream stream = (new Temp()).LoadFile(dir.FullName + "\\.UserInfo\\data.tar")) {
+				using (TarInputStream file = new TarInputStream(stream)) {
+					TarEntry Epasswd = file.GetNextEntry();
+					byte[] BSpasswd = new byte[Epasswd.Size];
+					file.Read(BSpasswd, 0, BSpasswd.Length);
+					key = System.Text.UnicodeEncoding.Unicode.GetString(BSpasswd, 0, BSpasswd.Length);
+					using (FileStream ico = (new Temp()).CreateFile()) {
+						file.GetNextEntry();
+						file.CopyEntryContents(ico);
+						Bitmap b = new Bitmap(ico);
+						icon = b.Clone(new Rectangle(0, 0, b.Width, b.Height), b.PixelFormat);
+						b.Dispose();
+						
+					}
+				}
 			}
 			
-			UserInfo user = new UserInfo();
+			
+			UserInfo user = new UserInfo(name, key);
+			user.Init(icon);
 			return user;
 		}
 		

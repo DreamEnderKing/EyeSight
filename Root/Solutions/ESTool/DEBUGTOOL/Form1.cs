@@ -36,12 +36,14 @@ namespace DEBUGTOOL
 		int y = 0;
 		void Button1Click(object sender, EventArgs e)
 		{
-			BackgroundImage = Libs.ResxOperater.GetImage("B3user_newUser");
+			UserInfo user = UserOperater.Get("User");
+			BackgroundImage = user.Icon;
 		}
 		
 		void Button2Click(object sender, EventArgs e)
 		{
-			NewUserInfo user = UserOperater.Create("User", "hello");
+			NewUserInfo user = UserOperater.Create("Past", "hello");
+			user.SetIcon(new Bitmap("E:\\123\\001.png"));
 			user.BeginInit();
 		}
 	}
