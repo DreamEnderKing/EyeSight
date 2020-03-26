@@ -40,7 +40,7 @@ namespace ESLog
 				WaitImg.Size = new System.Drawing.Size(DpiX / 2, DpiY / 2);
 				
 				WelText.Size = new System.Drawing.Size(DpiX * 5, DpiY / 2);
-				WelText.Location = new System.Drawing.Point(DpiX * 17 / 4, DpiY * 7 / 2);
+				WelText.Location = new System.Drawing.Point(DpiX * 16 / 4, DpiY * 7 / 2);
 				
 				NameText.Size = new System.Drawing.Size(DpiX * 2, DpiY / 2);
 				NameText.Location = new System.Drawing.Point(DpiX * 4, DpiY * 7 / 2);
@@ -74,7 +74,7 @@ namespace ESLog
 			KeyField.Font = new System.Drawing.Font("宋体", KeyField.Height - 6, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel, ((byte)(134)));
 			NameText.Font = new Font("宋体", NameText.Height - 6, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(8)));
 			label1.Font = new Font(pvf.Families[0], label1.Width / (label1.Text.Length + 2), System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.WelText.Font = new System.Drawing.Font("宋体", WelText.Height - 2, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+			this.WelText.Font = new System.Drawing.Font("宋体", WelText.Height * 3 / 5, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
 
 		}
 		

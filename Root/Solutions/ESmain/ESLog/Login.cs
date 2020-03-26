@@ -37,6 +37,7 @@ namespace ESLog
 		}
 		
 		public bool quitForRestart = false;
+		public bool quit = false;
 				
 		private void LoginSizeChanged(object sender, EventArgs e)
 		{

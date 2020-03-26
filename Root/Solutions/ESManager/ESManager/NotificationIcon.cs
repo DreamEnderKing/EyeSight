@@ -27,7 +27,6 @@ namespace ESManager
 			notifyIcon = new NotifyIcon();
 			notificationMenu = new ContextMenu(InitializeMenu());
 			
-			notifyIcon.DoubleClick += IconDoubleClick;
 			notifyIcon.Icon = (Icon)resources.GetObject("logo");
 			notifyIcon.ContextMenu = notificationMenu;
 		}
@@ -79,11 +78,6 @@ namespace ESManager
 			Application.Exit();
 		}
 		
-		private void IconDoubleClick(object sender, EventArgs e)
-		{
-			MessageBox.Show("The icon was double clicked");
-		}
-		
 		private void menuStartClick(object sender, EventArgs e)
 		{
 			Start();
@@ -98,30 +92,28 @@ namespace ESManager
 			//Disable Restart
 			this.notifyIcon.Icon = (Icon)resources.GetObject("logoDisabled");
 			notifyIcon.MouseClick += IconClick;
-			notifyIcon.DoubleClick -= IconDoubleClick;
 			notifyIcon.ContextMenu = null;
 			
 			//run the application
 			ES.StartInfo.FileName = Application.StartupPath + "\\ESMain.exe";
-			ES.Exited += ESExit;
 			ES.Start();
+			ES.WaitForExit();
+			if(ES.ExitCode == 0)
+			{
+				Application.ExitThread();
+				notifyIcon.MouseClick -= IconClick;
+				Application.Exit();
+			}
+			else if(ES.ExitCode == 400)
+			{
+				Start();
+			}
+
 		}
 		
 		private void IconClick(object sender, MouseEventArgs e)
 		{
 			MessageBox.Show("System is running!");
-		}
-		
-		private void ESExit(object sender, EventArgs e)
-		{
-			if(ES.ExitCode == 0)
-			{
-				Application.ExitThread();
-			}
-			else if(ES.ExitCode == 201)
-			{
-				Start();
-			}
 		}
 		#endregion
 	}

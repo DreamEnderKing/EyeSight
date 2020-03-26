@@ -76,7 +76,14 @@ namespace ESLog
 			NameText.Visible = false;
 			if(Users[userIndex].CheckKey(KeyField.Text))
 			{
-				
+				WelText.Text = "checked okay!";
+				WelText.Visible = true;
+				WaitImg.Visible = true;
+				DateTime d = DateTime.Now;
+				while ((DateTime.Now - d).Seconds <= 2) {
+					Application.DoEvents();
+				}
+				this.Close();
 			}
 			else
 			{

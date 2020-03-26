@@ -6,3 +6,11 @@ I:\EyeSight\Root\System\ESManager.exe
 I:\EyeSight\Root\System\ESManager.pdb
 I:\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.exe
 I:\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.pdb
+E:\2345下载\EyeSight\Root\System\ESManager.exe.config
+E:\2345下载\EyeSight\Root\System\ESManager.exe
+E:\2345下载\EyeSight\Root\System\ESManager.pdb
+E:\2345下载\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.csprojResolveAssemblyReference.cache
+E:\2345下载\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.NotificationIcon.resources
+E:\2345下载\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.csproj.GenerateResource.Cache
+E:\2345下载\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.exe
+E:\2345下载\EyeSight\Root\Solutions\ESManager\ESManager\obj\Debug\ESManager.pdb

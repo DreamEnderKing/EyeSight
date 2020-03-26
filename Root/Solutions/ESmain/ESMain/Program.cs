@@ -30,10 +30,19 @@ namespace ESMain
 			{
 				Application.DoEvents();
 			}
+			if(quitForRestart)
+			{
+				System.Environment.Exit(400);
+			}
+			else
+			{
+				System.Environment.Exit(0);
+			}
+			Application.Exit();
 		}
 		
 		public static bool quit = false;
-		
+		public static bool quitForRestart = false;
 	}
 	
 	class runApplication
@@ -60,7 +69,7 @@ namespace ESMain
 		private void login_Exit(object sender, EventArgs e)
 		{
 			Login form = (Login)sender;
-			if(!form.quitForRestart)
+			if(!form.quit)
 			{
 				Desktop d = new Desktop();
 				d.Show();
@@ -71,7 +80,7 @@ namespace ESMain
 				Shutdown s = new Shutdown();
 				s.Show();
 				s.Closed += shutdown_Exit;
-				s.quitForRestart = true;
+				s.quitForRestart = form.quitForRestart;
 			}
 		}
 		
@@ -86,7 +95,9 @@ namespace ESMain
 		
 		private void shutdown_Exit(object sender, EventArgs e)
 		{
-			System.Environment.Exit(0);
+			Shutdown form = (Shutdown)sender;
+			if(form.quitForRestart) Program.quitForRestart = true;
+			Program.quit = true;
 		}
 
 
